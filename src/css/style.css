@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&family=Birthstone+Bounce&family=League+Script&family=Sacramento&family=Special+Elite&family=WindSong&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Special Elite', cursive;
+  }
+  
+  header {
+    background: #fff;
+    align-content: center;
+  }
+  
+  .container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 0 1.25rem;
+  }
+  
+  li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  li:hover a {
+    text-decoration: underline;
+  }
+
+  .content-block{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 3%;
+  }
+
+  /* Reusable Header */
+  .jm-header {
+    text-align: center;
+  }
+
+  .jm-header-content {
+    text-align: center;
+  }
+
+  .jm-header-h1{
+    margin-bottom: .2em;
+    font-family: 'Birthstone Bounce', cursive;
+    font-size: 60px;
+  }
+
+  .jm-header-subtext{
+    padding-top: 0%;
+    display: inline-flex;
+    font-size: 20px;
+  }
+
+  .jm-header-h3{
+    font-family: cursive;
+    margin-top: .2em;
+  }
+
+  .jm-header-circle{
+    margin-top: .2em;
+    margin-left: .4em;
+    margin-right: .4em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header-image{
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-bar{
+    display: none;
+  }
+
+
+  /* Mobile Toggle */
+  
+  .nav-toggle {
+    display: none;
+    left: 1rem;
+    top: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .nav-toggle img {
+    width: 1.5rem;
+    transition: 300ms all ease;
+  }
+  
+  .nav-toggle:hover img {
+    opacity: 1;
+  }
+  
+  .open {
+    height: 100%;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Mobile */
+  @media all and (max-width: 720px) {
+
+    .nav-toggle{
+      display:flex;
+      flex-wrap:nowrap;
+      align-items:center;
+      justify-content: center;
+      vertical-align: middle;
+      height: 4rem;
+    }
+
+    .nav-icon{
+      display: flex;
+      left: 1rem;
+      position: absolute;
+    }
+
+    .nav-logo{
+      text-align: -webkit-match-parent;
+      height: 1rem;
+      position: absolute;
+    }
+
+    body-content{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .jm-header-content{
+      display: none;
+    }
+
+    
+    .jm-header-h1{
+      margin-bottom: .2em;
+      font-family: 'Birthstone Bounce', cursive;
+      font-size: 45px;
+    }
+  
+    .jm-header-subtext{
+      padding-top: 0%;
+      display: inline-flex;
+      font-size: 15px;
+    }
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      height: 0;
+      width: 100%;
+      overflow: hidden;
+      transition: 250ms height ease-in-out;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+  
+    li a {
+      font-size: 1.4rem;
+    }
+  
+    .nav-toggle {
+      display: inline-flex;
+    }
+
+    .header-image{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  
